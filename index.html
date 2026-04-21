@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="%BASE_URL%favicon.ico" />
+    <link rel="apple-touch-icon" href="%BASE_URL%favicon.ico" />
+    <title>Ulrike Sujansky, M.D.</title>
+    <meta name="description" content="Concierge medicine in San Mateo with Ulrike Sujansky, M.D." />
+    <meta name="author" content="Ulrike Sujansky, M.D." />
+
+    <meta property="og:title" content="Ulrike Sujansky, M.D." />
+    <meta property="og:description" content="Concierge medicine in San Mateo with Ulrike Sujansky, M.D." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%BASE_URL%favicon.ico" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="%BASE_URL%favicon.ico" />
+  </head>
+
+  <body>
+    <form name="contact" method="POST" action="/" netlify data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
+      <input type="text" name="first_name" />
+      <input type="text" name="last_name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+    <form name="membership-request" method="POST" action="/" netlify data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="membership-request" />
+      <input type="hidden" name="bot-field" />
+      <input type="text" name="first_name" />
+      <input type="text" name="last_name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

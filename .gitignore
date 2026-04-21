@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+vite-dev.log
+vite-persistent.log
+vite-run.log
+persist-test.log
+*.tsbuildinfo
+src/assets/Rika+at+office (2).png
