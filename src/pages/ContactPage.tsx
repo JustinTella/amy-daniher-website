@@ -43,7 +43,6 @@ function ContactPage() {
                 <div className="space-y-2">
                   <p className="flex items-center gap-2 text-sm text-foreground/80"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Telephone:</span> 650-393-5851</p>
                   <p className="flex items-center gap-2 text-sm text-foreground/80"><FileText className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Fax:</span> 650-393-5871</p>
-                  <p className="flex items-center gap-2 text-sm text-foreground/80"><Mail className="h-3.5 w-3.5 text-steely-blue" />info@AmyDaniherMD.com</p>
                 </div>
               </div>
               <div className="border border-navy/70 bg-white p-6 shadow-sm">

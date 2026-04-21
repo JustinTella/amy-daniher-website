@@ -21,7 +21,7 @@ type GoogleReviewResponse = {
 const PLACE_ID = 'ChIJyS-y6naej4ARkep0Q9QrJxY';
 const LIVE_SITE_FUNCTION = 'https://sujansky.netlify.app/.netlify/functions/google-reviews';
 const FALLBACK_GOOGLE_REVIEWS: GoogleReviewResponse = {
-  placeName: 'Amy Sawyer Daniher, M.D.',
+  placeName: 'Amy Daniher, M.D.',
   rating: 4.5,
   userRatingCount: 16,
   reviews: [

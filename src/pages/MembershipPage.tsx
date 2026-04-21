@@ -28,7 +28,7 @@ function MembershipPage() {
         <ul className="mx-auto max-w-2xl list-disc space-y-2.5 pl-5 text-left">
           <li>Easy direct communication with Dr. Daniher via her personal cell phone after hours</li>
           <li>Same day/next day email communications including weekends and holidays</li>
-          <li>Limited practice size, which allows for more time with the doctor</li>
+          <li>Limited number of patients, which allows for more time with the doctor</li>
           <li>Expedited call-backs and same day/next day appointment availability</li>
           <li>Enhanced communication with hospital physicians and staff that will help ensure a seamless transition between hospital and outpatient care</li>
           <li>Home visits can be arranged for those who are homebound</li>
@@ -74,7 +74,7 @@ function MembershipPage() {
     {
       question: 'What does the Membership Program include?',
       answer:
-        'Easy direct communication with Dr. Daniher via her personal cell phone after hours as well as same day or next day email communication. Limited practice size, which allows you to have more time with the doctor. Expedited call-backs and same day or next day appointment availability. Physician-level communication with your other consulting specialists that will allow a timely resolution of any concerns or issues you may have. Enhanced communication with hospital physicians and staff will help ensure that you have a seamless transition between the hospital and your outpatient care. Home visits for those who live within a 10 mile radius and who are unable to travel to the office. Longer and more flexible appointments where all of your health education issues and concerns are addressed. A routine annual executive physical including a thorough review of your personal and family history, physical exam, and screening tests data. Follow-up communications that often help guide health care decisions. Biannual state-of-the-art evaluation of body composition with analysis of muscle versus fat mass in trunk and individual limbs. This allows for more individualized dietary and exercise counseling.',
+        'Easy direct communication with Dr. Daniher via her personal cell phone after hours as well as same day or next day email communication. Limited number of patients, which allows you to have more time with the doctor. Expedited call-backs and same day or next day appointment availability. Physician-level communication with your other consulting specialists that will allow a timely resolution of any concerns or issues you may have. Enhanced communication with hospital physicians and staff will help ensure that you have a seamless transition between the hospital and your outpatient care. Home visits for those who live within a 10 mile radius and who are unable to travel to the office. Longer and more flexible appointments where all of your health education issues and concerns are addressed. A routine annual executive physical including a thorough review of your personal and family history, physical exam, and screening tests data. Follow-up communications that often help guide health care decisions. Biannual state-of-the-art evaluation of body composition with analysis of muscle versus fat mass in trunk and individual limbs. This allows for more individualized dietary and exercise counseling.',
     },
     {
       question: 'How do I become a member?',
@@ -134,7 +134,7 @@ function MembershipPage() {
     {
       question: 'What if I have more questions?',
       answer:
-        'Please call our office at 650 393-5851 to speak with our staff. Shawna Guzman, our office manager and Private Medicine coordinator, can discuss details of our new practice concept with you. Dr. Daniher would also be happy to talk to you personally on the phone if you have questions.',
+        'Please call our office at 650 393-5851 to speak with our staff. Shawna G., our office manager and Private Medicine coordinator, can discuss details of our new practice concept with you. Dr. Daniher would also be happy to talk to you personally on the phone if you have questions.',
     },
   ];
 

@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import MapEmbed from '@/components/MapEmbed';
-import officeImage from '@/assets/Gemini_Generated_Image_l6jcc5l6jcc5l6jc.png';
+import officeImage from '@/assets/3882ad1c-8bdd-42fb-8c09-61a8db1db83b.png';
 import drPortrait from '@/assets/Daniher.webp';
 import shawnaPortrait from '@/assets/image-asset (4).webp';
 import kimPortrait from '@/assets/Kim (1).webp';
@@ -13,9 +13,9 @@ import mapImage from '@/assets/dnaiherrrrrrrr.webp';
 
 function HomePage() {
   const teamMembers = [
-    { name: 'Amy Sawyer Daniher, M.D.', image: drPortrait, role: 'Physician' },
-    { name: 'Shawna Guzman', image: shawnaPortrait, role: 'Office Manager' },
-    { name: 'Michelle Martinez', image: kimPortrait, role: 'Medical Assistant' }
+    { name: 'Amy Daniher, M.D.', image: drPortrait, role: 'Physician' },
+    { name: 'Shawna G.', image: shawnaPortrait, role: 'Office Manager' },
+    { name: 'Kim J.', image: kimPortrait, role: 'Medical Assistant' }
   ];
 
   return (
@@ -28,7 +28,7 @@ function HomePage() {
             <img
               src={officeImage}
               alt="Office at 34 North San Mateo Drive"
-              className="h-full w-full scale-[1.08] object-cover object-left contrast-[1.14] saturate-[1.08] brightness-[0.98]"
+              className="h-full w-full object-cover object-top contrast-[1.14] saturate-[1.08] brightness-[0.98]"
             />
             <div className="absolute inset-0 bg-[linear-gradient(108deg,rgba(56,73,80,0.62)_0%,rgba(56,73,80,0.34)_30%,rgba(56,73,80,0.10)_56%,rgba(56,73,80,0)_100%)]" />
           </div>
@@ -40,11 +40,11 @@ function HomePage() {
               className="relative max-w-3xl"
             >
               <div className="mt-5 px-1 md:px-2">
-                <p className="hero-text mb-2 text-2xl font-semibold uppercase tracking-[0.18em] text-white/95 drop-shadow-[0_2px_8px_rgba(15,23,42,0.36)] md:text-3xl">
-                  Partnering in Your Health
+                <p className="hero-text mb-2 whitespace-nowrap text-xl font-semibold uppercase tracking-[0.18em] text-white/95 drop-shadow-[0_2px_8px_rgba(15,23,42,0.36)] md:text-2xl">
+                  Comprehensive Care. Individual Focus.
                 </p>
                 <h1 className="mb-2 whitespace-nowrap text-[2.2rem] font-semibold leading-[0.95] tracking-[-0.03em] text-white drop-shadow-[0_3px_14px_rgba(15,23,42,0.34)] md:text-[3.4rem] lg:text-[4.6rem]">
-                  Amy Sawyer Daniher, M.D.
+                  Amy Daniher, M.D.
                 </h1>
                 <p className="hero-text mb-1 text-4xl font-medium italic leading-none tracking-[-0.02em] text-white/95 drop-shadow-[0_3px_12px_rgba(15,23,42,0.32)] md:text-5xl">
                   Concierge Medicine
@@ -209,7 +209,6 @@ function HomePage() {
                   <div className="space-y-2">
                     <p className="flex items-center gap-2 text-sm text-navy/88"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Telephone:</span> 650-393-5851</p>
                     <p className="flex items-center gap-2 text-sm text-navy/88"><FileText className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Fax:</span> 650-393-5871</p>
-                    <p className="flex items-center gap-2 text-sm text-navy/88"><Mail className="h-3.5 w-3.5 text-steely-blue" />info@AmyDaniherMD.com</p>
                   </div>
                 </div>
                 <div className="border border-navy/70 bg-white p-6">

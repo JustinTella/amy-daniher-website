@@ -14,9 +14,9 @@ function TermsOfServicePage() {
             <h2 className="mt-8 mb-4 text-2xl font-semibold text-navy">Agreement to Terms</h2>
             <p className="mb-4">
               These Terms of Use constitute a legally binding agreement made between you, whether
-              personally or on behalf of an entity (&quot;you&quot;), and Amy Sawyer Daniher,
+              personally or on behalf of an entity (&quot;you&quot;), and Amy Daniher,
               M.D. In this document, &quot;we,&quot; &quot;our,&quot; or &quot;us&quot; refer to Amy
-              Sawyer Daniher, M.D. concerning your access to and use of this website, as well as any other media
+              Daniher, M.D. concerning your access to and use of this website, as well as any other media
               form, media channel, or mobile website related, linked, or otherwise connected thereto
               (collectively, the &quot;Site&quot;).
             </p>
@@ -182,12 +182,11 @@ function TermsOfServicePage() {
               In order to resolve a complaint regarding the Site or to receive further information
               regarding the use of the Site, please contact us at:
             </p>
-            <p className="mb-2">Amy Sawyer Daniher, M.D.</p>
+            <p className="mb-2">Amy Daniher, M.D.</p>
             <p className="mb-2">34 N. San Mateo Drive, Suite #1</p>
             <p className="mb-2">San Mateo, CA94401</p>
             <p className="mb-2">T: 650-393-5851</p>
             <p className="mb-2">F: 650-393-5871</p>
-            <p className="mb-4">info@AmyDaniherMD.com</p>
           </div>
         </div>
       </main>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import logoImage from '@/assets/colorlogo.png';
+import logoImage from '@/assets/gretalogo.png';
 
 function Header() {
   const location = useLocation();
@@ -42,9 +42,9 @@ function Header() {
   };
 
   const serviceLinks = [
-    { path: '/services#primary-care', label: 'Concierge Care' },
-    { path: '/services#wellness', label: 'Concierge Plus' },
-    { path: '/services#additional-services', label: 'Additional Services' }
+    { path: '/services#primary-care', label: 'Concierge Care', disabled: false },
+    { path: '/services#wellness', label: 'Concierge Plus', disabled: true },
+    { path: '/services#additional-services', label: 'Additional Services', disabled: false },
   ];
 
   const aboutLinks = [
@@ -63,12 +63,15 @@ function Header() {
           <Link to="/" className="shrink-0">
             <img
               src={logoImage}
-              alt="Amy Sawyer Daniher, M.D. - Partnering with You in Health and Wellness"
+              alt="Amy Daniher, M.D. - Partnering with You in Health and Wellness"
               className="h-10 md:h-[3.45rem] w-auto object-contain"
             />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-14 xl:gap-16">
+            <Link to="/" onClick={(e) => handleNavClick(e, '/')} className={`${linkBase} ${location.pathname === '/' ? activeStyle : ''}`}>
+              Home
+            </Link>
             <Link to="/membership" onClick={(e) => handleNavClick(e, '/membership')} className={`${linkBase} ${isActive('/membership') ? activeStyle : ''}`}>
               Membership
             </Link>
@@ -90,14 +93,21 @@ function Header() {
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50">
                   <div className="bg-white border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)] py-2 min-w-[240px]">
                     {serviceLinks.map((link) => (
-                      <Link
-                        key={link.path}
-                        to={link.path}
-                        onClick={(e) => handleNavClick(e, link.path)}
-                        className="block px-5 py-2.5 text-[15px] text-navy/70 hover:text-gold hover:bg-light-gray transition-colors duration-150"
-                      >
-                        {link.label}
-                      </Link>
+                      link.disabled ? (
+                        <span key={link.path} className="flex items-center gap-2 px-5 py-2.5 text-[15px] text-navy/30 cursor-default select-none">
+                          {link.label}
+                          <span className="text-[10px] uppercase tracking-wider text-navy/30">Coming Soon</span>
+                        </span>
+                      ) : (
+                        <Link
+                          key={link.path}
+                          to={link.path}
+                          onClick={(e) => handleNavClick(e, link.path)}
+                          className="block px-5 py-2.5 text-[15px] text-navy/70 hover:text-gold hover:bg-light-gray transition-colors duration-150"
+                        >
+                          {link.label}
+                        </Link>
+                      )
                     ))}
                   </div>
                 </div>
@@ -135,10 +145,6 @@ function Header() {
               )}
             </div>
 
-            <Link to="/blog" onClick={(e) => handleNavClick(e, '/blog')} className={`${linkBase} ${isActive('/blog') ? activeStyle : ''}`}>
-              Blog
-            </Link>
-
             <Link to="/contact" onClick={(e) => handleNavClick(e, '/contact')} className={`${linkBase} ${isActive('/contact') ? activeStyle : ''}`}>
               Contact
             </Link>
@@ -155,6 +161,9 @@ function Header() {
 
         {mobileMenuOpen && (
           <nav className="lg:hidden py-4 space-y-1 border-t border-gray-100">
+            <Link to="/" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-sm font-medium text-navy hover:text-gold ${location.pathname === '/' ? 'text-gold' : ''}`}>
+              Home
+            </Link>
             <Link to="/membership" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-sm font-medium text-navy hover:text-gold ${isActive('/membership') ? 'text-gold' : ''}`}>
               Membership
             </Link>
@@ -164,9 +173,16 @@ function Header() {
               </Link>
               <div className="pl-4 space-y-1 border-l border-gray-200 ml-2">
                 {serviceLinks.map((link) => (
-                  <Link key={link.path} to={link.path} onClick={(e) => handleNavClick(e, link.path)} className="block py-1.5 text-xs text-navy/60 hover:text-gold">
-                    {link.label}
-                  </Link>
+                  link.disabled ? (
+                    <span key={link.path} className="flex items-center gap-1.5 py-1.5 text-xs text-navy/30 cursor-default select-none">
+                      {link.label}
+                      <span className="text-[9px] uppercase tracking-wider text-navy/30">Coming Soon</span>
+                    </span>
+                  ) : (
+                    <Link key={link.path} to={link.path} onClick={(e) => handleNavClick(e, link.path)} className="block py-1.5 text-xs text-navy/60 hover:text-gold">
+                      {link.label}
+                    </Link>
+                  )
                 ))}
               </div>
             </div>
@@ -182,9 +198,6 @@ function Header() {
                 ))}
               </div>
             </div>
-            <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-sm font-medium text-navy hover:text-gold ${isActive('/blog') ? 'text-gold' : ''}`}>
-              Blog
-            </Link>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-sm font-medium text-navy hover:text-gold ${isActive('/contact') ? 'text-gold' : ''}`}>
               Contact
             </Link>

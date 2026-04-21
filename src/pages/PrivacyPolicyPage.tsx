@@ -13,7 +13,7 @@ function PrivacyPolicyPage() {
 
             <h2 className="mt-8 mb-4 text-2xl font-semibold text-navy">Overview</h2>
             <p className="mb-4">
-              Amy Sawyer Daniher, M.D. respects your privacy and is committed to protecting the
+              Amy Daniher, M.D. respects your privacy and is committed to protecting the
               information you share with us through this website. This Privacy Policy explains how
               we collect, use, and safeguard information when you visit this website, submit a
               form, or otherwise interact with our online content.
@@ -99,12 +99,11 @@ function PrivacyPolicyPage() {
             </p>
 
             <h2 className="mt-8 mb-4 text-2xl font-semibold text-navy">Contact Us</h2>
-            <p className="mb-2">Amy Sawyer Daniher, M.D.</p>
+            <p className="mb-2">Amy Daniher, M.D.</p>
             <p className="mb-2">34 N. San Mateo Drive, Suite #1</p>
             <p className="mb-2">San Mateo, CA94401</p>
             <p className="mb-2">T: 650-393-5851</p>
             <p className="mb-2">F: 650-393-5871</p>
-            <p className="mb-4">info@AmyDaniherMD.com</p>
           </div>
         </div>
       </main>

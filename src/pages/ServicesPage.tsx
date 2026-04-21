@@ -132,7 +132,7 @@ function ServicesPage() {
               <p className="text-sm tracking-wide text-navy/65">This program is currently in development</p>
             </div>
           </div>
-          <div className="pointer-events-none absolute inset-0 z-[9] bg-white/12" />
+          <div className="pointer-events-none absolute inset-0 z-[9] bg-white/40 backdrop-blur-sm" />
           <ServiceSectionHeader title="Concierge Plus" />
           <div className="max-w-7xl mx-auto mb-24 px-4 sm:px-6 lg:px-8 md:mb-32">
             <div className="grid grid-cols-1 items-start gap-12 md:gap-16 lg:grid-cols-2 lg:gap-20">

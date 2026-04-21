@@ -8,7 +8,6 @@ import MembershipPage from "./pages/MembershipPage";
 import ServicesPage from "./pages/ServicesPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import TeamPage from "./pages/TeamPage";
-import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
 import ThankYouPage from "./pages/ThankYouPage";
 import NotFound from "./pages/NotFound";
@@ -41,7 +40,6 @@ const App = () => (
           <Route path="/team" element={<TeamPage />} />
           <Route path="/dr-daniher" element={<Navigate to="/team" replace />} />
           <Route path="/testimonials" element={<Navigate to="/about" replace />} />
-          <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />

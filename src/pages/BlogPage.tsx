@@ -4,7 +4,7 @@ import { ChevronDown, ChevronUp, Tag } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BlogPostCard from '@/components/BlogPostCard';
-import logoImage from '@/assets/colorlogo.png';
+import logoImage from '@/assets/gretalogo.png';
 import PageSectionHeader from '@/components/PageSectionHeader';
 import { blogPosts } from '@/lib/blogPosts';
 

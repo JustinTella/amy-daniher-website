@@ -16,41 +16,41 @@ html {
 
 @layer base {
   :root {
-    --background: 180 14% 97%;
-    --foreground: 198 15% 44%;
-    
+    --background: 0 0% 100%;
+    --foreground: 196 19% 38%;
+
     --card: 0 0% 100%;
-    --card-foreground: 198 15% 44%;
-    
+    --card-foreground: 196 19% 38%;
+
     --popover: 0 0% 100%;
-    --popover-foreground: 198 15% 44%;
-    
-    --primary: 198 15% 44%;
+    --popover-foreground: 196 19% 38%;
+
+    --primary: 196 19% 38%;
     --primary-foreground: 0 0% 100%;
-    
-    --secondary: 176 29% 52%;
-    --secondary-foreground: 198 19% 28%;
-    
-    --muted: 180 16% 94%;
-    --muted-foreground: 198 13% 50%;
-    
-    --accent: 176 35% 67%;
-    --accent-foreground: 198 19% 28%;
-    
+
+    --secondary: 176 35% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 176 15% 93%;
+    --muted-foreground: 196 15% 50%;
+
+    --accent: 176 33% 58%;
+    --accent-foreground: 0 0% 100%;
+
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    
-    --border: 176 23% 84%;
-    --input: 176 23% 84%;
-    --ring: 176 29% 52%;
-    
+
+    --border: 176 18% 85%;
+    --input: 176 18% 85%;
+    --ring: 176 35% 47%;
+
     --radius: 0.5rem;
 
-    --navy: 198 15% 44%;
-    --gold: 176 29% 52%;
-    --steely-blue: 176 35% 67%;
-    --light-gray: 180 14% 97%;
-    --dark-blue-gray: 198 19% 34%;
+    --navy: 196 19% 38%;
+    --gold: 176 35% 47%;
+    --steely-blue: 176 33% 58%;
+    --light-gray: 176 15% 96%;
+    --dark-blue-gray: 196 19% 28%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

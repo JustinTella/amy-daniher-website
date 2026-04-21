@@ -32,7 +32,7 @@ function TeamPage() {
                   <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-gold md:text-base">Meet</p>
                   <div className="mb-3 h-0.5 w-20 bg-navy/70" />
                   <h2 className="text-balance text-[2.1rem] font-semibold leading-[1.02] tracking-tight text-navy md:text-[3.1rem] lg:text-[3.7rem]">
-                    Amy Sawyer Daniher, M.D.
+                    Amy Daniher, M.D.
                   </h2>
                 </motion.div>
                 <motion.div
@@ -43,7 +43,7 @@ function TeamPage() {
                   className="flex justify-end py-6"
                 >
                   <div className="h-44 w-44 overflow-hidden rounded-full border-2 border-navy/15 shadow-md">
-                    <img src={drHero} alt="Dr. Amy Sawyer Daniher" className="h-full w-full scale-[1.08] object-cover object-[center_24%]" />
+                    <img src={drHero} alt="Dr. Amy Daniher" className="h-full w-full scale-[1.08] object-cover object-[center_24%]" />
                   </div>
                 </motion.div>
               </div>
@@ -64,7 +64,7 @@ function TeamPage() {
                   <h4 className="text-lg font-bold text-navy mb-3 uppercase tracking-wide">Education</h4>
                   <ul className="space-y-3 text-[18px] text-foreground/90 leading-9">
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Completed undergrad at Harvard graduating summa cum laude</li>
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Passed Stanford School of Medicine</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Graduated from Stanford School of Medicine</li>
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Completed internal medicine residency at Stanford</li>
                   </ul>
                 </div>
@@ -76,7 +76,7 @@ function TeamPage() {
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> California Medical Association</li>
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> American Academy of Medical Acupuncture</li>
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Board Certified by American Board of Internal Medicine in 1997, recertified in 2017</li>
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Nominated as a Fellow of the American College of Physicians in 2019</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Elected as a Fellow of the American College of Physicians</li>
                   </ul>
                 </div>
               </motion.div>
@@ -88,13 +88,13 @@ function TeamPage() {
                     Board Certified by the American Board of Internal Medicine in 1997, recertified in 2017.
                   </p>
                   <p className="mt-3 text-[18px] text-foreground/90 leading-9">
-                    Nominated as a Fellow of the American College of Physicians in 2019.
+                    Elected as a Fellow of the American College of Physicians.
                   </p>
                 </div>
                 <div className="bg-white p-6 shadow-sm border border-gray-300 border-t-4 border-t-steely-blue">
                   <h4 className="text-lg font-bold text-navy mb-3 uppercase tracking-wide border-b border-gray-200 pb-2">Family Life</h4>
                   <p className="mt-3 text-[18px] text-foreground/90 leading-9">
-                    Dr. Sujansky is married and has two sons and will be glad to talk about them anytime, anywhere. She loves to spend her free time with skiing (and apres-skiing!), hiking, knitting, and reading. She enjoys traveling to exotic places. At home, she looks forward to sharing good meal of pasta carbonara with friends and family.
+                    Dr. Daniher is married and has two sons and will be glad to talk about them anytime, anywhere. She loves to spend her free time with skiing (and apres-skiing!), hiking, knitting, and reading. She enjoys traveling to exotic places. At home, she looks forward to sharing a good meal of pasta carbonara with friends and family.
                   </p>
                 </div>
                 <div className="bg-white p-6 shadow-sm border border-gray-300 border-t-4 border-t-gold">
@@ -120,10 +120,10 @@ function TeamPage() {
                 className="flex flex-col items-center gap-4 lg:items-start"
               >
                 <div className="h-40 w-40 overflow-hidden rounded-full border-2 border-navy/15 shadow-md">
-                  <img src={shawnaPortrait} alt="Shawna Guzman" className="h-full w-full object-cover object-top" />
+                  <img src={shawnaPortrait} alt="Shawna G." className="h-full w-full object-cover object-top" />
                 </div>
                 <div className="text-center lg:text-left">
-                  <p className="text-xl font-semibold text-navy">Shawna Guzman</p>
+                  <p className="text-xl font-semibold text-navy">Shawna G.</p>
                   <p className="mt-1 text-sm font-medium uppercase tracking-wider text-steely-blue">Office Manager</p>
                 </div>
               </motion.div>
@@ -132,7 +132,7 @@ function TeamPage() {
                 <div className="bg-white p-6 shadow-sm border border-gray-300 border-t-4 border-t-steely-blue">
                   <h4 className="text-lg font-bold text-navy mb-3 uppercase tracking-wide border-b border-gray-200 pb-2">About Shawna</h4>
                   <p className="mt-3 text-[18px] text-foreground/90 leading-9">
-                    Shawna was born and raised in the Bay Area. A self-described soccer mom and baseball mom, she spends much of her free time with her two children. She cheers on the Giants and 49ers, and spends many vacations at Disneyland. Shawna is the Office Manager and has been with the practice since 2004.
+                    Shawna was born and raised in the Bay Area. A self-described soccer mom and baseball mom, she spends much of her free time with her three children. She cheers on the Giants and 49ers. Shawna is the Office Manager and has been with the practice since 2004.
                   </p>
                 </div>
               </motion.div>
@@ -152,10 +152,10 @@ function TeamPage() {
                 className="flex flex-col items-center gap-4 lg:items-start"
               >
                 <div className="h-40 w-40 overflow-hidden rounded-full border-2 border-navy/15 shadow-md">
-                  <img src={kimPortrait} alt="Michelle Martinez" className="h-full w-full object-cover object-top" />
+                  <img src={kimPortrait} alt="Kim J." className="h-full w-full object-cover object-top" />
                 </div>
                 <div className="text-center lg:text-left">
-                  <p className="text-xl font-semibold text-navy">Michelle Martinez</p>
+                  <p className="text-xl font-semibold text-navy">Kim J.</p>
                   <p className="mt-1 text-sm font-medium uppercase tracking-wider text-gold">Medical Assistant</p>
                 </div>
               </motion.div>
