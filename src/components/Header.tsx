@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import logoImage from '@/assets/grgrgrg.png';
+import logoImage from '@/assets/colorlogo.png';
 
 function Header() {
   const location = useLocation();

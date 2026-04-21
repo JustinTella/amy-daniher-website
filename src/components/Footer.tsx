@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, FileText, Star, HeartPulse, Stethoscope, Users, Newspaper, Mail } from 'lucide-react';
-import logoImage from '@/assets/grgrgrg.png';
+import logoImage from '@/assets/colorlogo.png';
 
 function Footer() {
   const navigationItems = [
@@ -12,7 +12,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="border-t border-navy/12 bg-[#f8f6f1]">
+    <footer className="border-t border-navy/12 bg-light-gray">
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-[1fr_0.72fr_0.78fr] md:gap-8">
           <div>

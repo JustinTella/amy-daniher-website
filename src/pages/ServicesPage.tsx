@@ -121,18 +121,18 @@ function ServicesPage() {
           </div>
         </section>
 
-        <section id="wellness" className="relative scroll-mt-24 border-t border-navy/15 bg-[linear-gradient(to_bottom,rgba(20,36,74,0.03),rgba(20,36,74,0)_120px)] pt-16 md:pt-20">
+        <section id="wellness" className="relative scroll-mt-24 border-t border-navy/15 bg-[linear-gradient(to_bottom,rgba(95,118,128,0.06),rgba(95,118,128,0)_120px)] pt-16 md:pt-20">
           <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-            <div className="flex flex-col items-center gap-3 border border-[#c9a84c]/40 bg-[#fdf8ee] px-14 py-7 shadow-[0_6px_32px_rgba(180,140,60,0.15)]">
+            <div className="flex flex-col items-center gap-3 border border-steely-blue/60 bg-light-gray px-14 py-7 shadow-[0_6px_32px_rgba(95,168,164,0.16)]">
               <div className="flex items-center gap-4 w-full">
-                <span className="h-px flex-1 bg-[#c9a84c]/40" />
-                <p className="text-2xl font-semibold uppercase tracking-[0.28em] text-[#a8882e]">Coming Soon</p>
-                <span className="h-px flex-1 bg-[#c9a84c]/40" />
+                <span className="h-px flex-1 bg-steely-blue/60" />
+                <p className="text-2xl font-semibold uppercase tracking-[0.28em] text-gold">Coming Soon</p>
+                <span className="h-px flex-1 bg-steely-blue/60" />
               </div>
-              <p className="text-sm tracking-wide text-[#8a7040]/70">This program is currently in development</p>
+              <p className="text-sm tracking-wide text-navy/65">This program is currently in development</p>
             </div>
           </div>
-          <div className="pointer-events-none absolute inset-0 z-[9] bg-white/30 backdrop-blur-[2px]" />
+          <div className="pointer-events-none absolute inset-0 z-[9] bg-white/12" />
           <ServiceSectionHeader title="Concierge Plus" />
           <div className="max-w-7xl mx-auto mb-24 px-4 sm:px-6 lg:px-8 md:mb-32">
             <div className="grid grid-cols-1 items-start gap-12 md:gap-16 lg:grid-cols-2 lg:gap-20">
@@ -169,7 +169,7 @@ function ServicesPage() {
           </div>
         </section>
 
-        <section id="additional-services" className="scroll-mt-24 border-t border-navy/15 bg-[linear-gradient(to_bottom,rgba(20,36,74,0.03),rgba(20,36,74,0)_120px)] pt-16 md:pt-20">
+        <section id="additional-services" className="scroll-mt-24 border-t border-navy/15 bg-[linear-gradient(to_bottom,rgba(95,118,128,0.06),rgba(95,118,128,0)_120px)] pt-16 md:pt-20">
           <ServiceSectionHeader title="Additional Services" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
@@ -206,7 +206,7 @@ function ServicesPage() {
 
               {/* Travel Kit CTA */}
               <div>
-                <div className="mt-6 border border-gold/35 bg-[linear-gradient(135deg,rgba(184,142,63,0.06),rgba(255,255,255,0.95))] px-8 py-7 shadow-sm">
+                <div className="mt-6 border border-steely-blue/60 bg-[linear-gradient(135deg,rgba(95,168,164,0.10),rgba(255,255,255,0.96))] px-8 py-7 shadow-sm">
                   <div className="flex flex-col items-center gap-4 text-center">
                     <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">Planning a Trip?</p>
                     <p className="text-[17px] leading-8 text-foreground/80 max-w-2xl">
@@ -216,7 +216,7 @@ function ServicesPage() {
                       href="https://forms.gle/t9sRSCfSpkM2AxT79"
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-1 inline-flex min-w-[200px] justify-center border border-navy bg-navy px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_24px_rgba(20,36,74,0.12)] transition-colors duration-200 hover:bg-white hover:text-navy"
+                      className="mt-1 inline-flex min-w-[200px] justify-center border border-navy bg-navy px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_24px_rgba(95,118,128,0.14)] transition-colors duration-200 hover:bg-white hover:text-navy"
                     >
                       Request a Travel Kit
                     </a>

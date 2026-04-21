@@ -71,11 +71,11 @@ function YelpReviewLoop() {
               {visibleReviews.map((review) => (
                 <article
                   key={`${review.author}-${review.text}`}
-                  className="flex min-h-[198px] w-[15rem] shrink-0 flex-col border border-gray-200 bg-[#fbfaf6] p-4 text-left shadow-[0_8px_24px_rgba(20,36,74,0.05)]"
+                  className="flex min-h-[198px] w-[15rem] shrink-0 flex-col border border-steely-blue/35 bg-light-gray p-4 text-left shadow-[0_8px_24px_rgba(95,118,128,0.10)]"
                 >
                   <div>
                     <div className="mb-3 flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#c7421d] text-sm font-semibold text-white">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold text-sm font-semibold text-white">
                         {review.author.charAt(0)}
                       </div>
                       <div className="min-w-0">

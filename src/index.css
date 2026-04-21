@@ -16,41 +16,41 @@ html {
 
 @layer base {
   :root {
-    --background: 30 8% 95%;
-    --foreground: 221 47% 20%;
+    --background: 180 14% 97%;
+    --foreground: 198 15% 44%;
     
     --card: 0 0% 100%;
-    --card-foreground: 221 47% 20%;
+    --card-foreground: 198 15% 44%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 221 47% 20%;
+    --popover-foreground: 198 15% 44%;
     
-    --primary: 221 47% 20%;
+    --primary: 198 15% 44%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 37 55% 51%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 176 29% 52%;
+    --secondary-foreground: 198 19% 28%;
     
-    --muted: 210 20% 90%;
-    --muted-foreground: 221 20% 45%;
+    --muted: 180 16% 94%;
+    --muted-foreground: 198 13% 50%;
     
-    --accent: 208 27% 54%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 176 35% 67%;
+    --accent-foreground: 198 19% 28%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 221 47% 20%;
+    --border: 176 23% 84%;
+    --input: 176 23% 84%;
+    --ring: 176 29% 52%;
     
     --radius: 0.5rem;
 
-    --navy: 221 47% 20%;
-    --gold: 37 55% 51%;
-    --steely-blue: 208 27% 54%;
-    --light-gray: 30 8% 95%;
-    --dark-blue-gray: 210 25% 35%;
+    --navy: 198 15% 44%;
+    --gold: 176 29% 52%;
+    --steely-blue: 176 35% 67%;
+    --light-gray: 180 14% 97%;
+    --dark-blue-gray: 198 19% 34%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

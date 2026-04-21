@@ -118,7 +118,7 @@ function AboutUsPage() {
                   className={`text-center flex flex-col items-center ${index === 0 ? 'md:scale-105 z-10' : ''}`}
                 >
                   <div
-                    className="mb-4 w-full overflow-hidden border border-gray-300 bg-white p-2 shadow-[0_8px_24px_rgba(20,36,74,0.06)]"
+                    className="mb-4 w-full overflow-hidden border border-gray-300 bg-white p-2 shadow-[0_8px_24px_rgba(95,118,128,0.10)]"
                   >
                     <img src={member.image} alt={`${member.name}, ${member.title}`} className="h-[350px] w-full object-cover object-top" />
                   </div>
