@@ -53,7 +53,7 @@ function Header() {
     { path: '/about#testimonials', label: 'Testimonials' }
   ];
 
-  const linkBase = 'text-navy/80 hover:text-gold transition-colors duration-200 text-[15px] tracking-[0.08em] uppercase font-medium';
+  const linkBase = 'text-navy/80 hover:text-gold transition-colors duration-200 text-[17px] tracking-[0.08em] uppercase font-medium';
   const activeStyle = 'text-gold';
 
   return (
@@ -94,7 +94,7 @@ function Header() {
                   <div className="bg-white border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)] py-2 min-w-[240px]">
                     {serviceLinks.map((link) => (
                       link.disabled ? (
-                        <span key={link.path} className="flex items-center gap-2 px-5 py-2.5 text-[15px] text-navy/30 cursor-default select-none">
+                        <span key={link.path} className="flex items-center gap-2 px-5 py-3 text-[16px] text-navy/30 cursor-default select-none">
                           {link.label}
                           <span className="text-[10px] uppercase tracking-wider text-navy/30">Coming Soon</span>
                         </span>
@@ -103,7 +103,7 @@ function Header() {
                           key={link.path}
                           to={link.path}
                           onClick={(e) => handleNavClick(e, link.path)}
-                          className="block px-5 py-2.5 text-[15px] text-navy/70 hover:text-gold hover:bg-light-gray transition-colors duration-150"
+                          className="block px-5 py-3 text-[16px] text-navy/70 hover:text-gold hover:bg-light-gray transition-colors duration-150"
                         >
                           {link.label}
                         </Link>
@@ -135,7 +135,7 @@ function Header() {
                         key={link.path}
                         to={link.path}
                         onClick={(e) => handleNavClick(e, link.path)}
-                        className="block px-5 py-2.5 text-[15px] text-navy/70 hover:text-gold hover:bg-light-gray transition-colors duration-150"
+                        className="block px-5 py-3 text-[16px] text-navy/70 hover:text-gold hover:bg-light-gray transition-colors duration-150"
                       >
                         {link.label}
                       </Link>
@@ -161,25 +161,25 @@ function Header() {
 
         {mobileMenuOpen && (
           <nav className="lg:hidden py-4 space-y-1 border-t border-gray-100">
-            <Link to="/" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-sm font-medium text-navy hover:text-gold ${location.pathname === '/' ? 'text-gold' : ''}`}>
+            <Link to="/" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-[16px] font-medium text-navy hover:text-gold ${location.pathname === '/' ? 'text-gold' : ''}`}>
               Home
             </Link>
-            <Link to="/membership" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-sm font-medium text-navy hover:text-gold ${isActive('/membership') ? 'text-gold' : ''}`}>
+            <Link to="/membership" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-[16px] font-medium text-navy hover:text-gold ${isActive('/membership') ? 'text-gold' : ''}`}>
               Membership
             </Link>
             <div>
-              <Link to="/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 text-sm font-medium text-navy hover:text-gold">
+              <Link to="/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 text-[16px] font-medium text-navy hover:text-gold">
                 Services
               </Link>
               <div className="pl-4 space-y-1 border-l border-gray-200 ml-2">
                 {serviceLinks.map((link) => (
                   link.disabled ? (
-                    <span key={link.path} className="flex items-center gap-1.5 py-1.5 text-xs text-navy/30 cursor-default select-none">
+                    <span key={link.path} className="flex items-center gap-1.5 py-2 text-[14px] text-navy/30 cursor-default select-none">
                       {link.label}
                       <span className="text-[9px] uppercase tracking-wider text-navy/30">Coming Soon</span>
                     </span>
                   ) : (
-                    <Link key={link.path} to={link.path} onClick={(e) => handleNavClick(e, link.path)} className="block py-1.5 text-xs text-navy/60 hover:text-gold">
+                    <Link key={link.path} to={link.path} onClick={(e) => handleNavClick(e, link.path)} className="block py-2 text-[14px] text-navy/60 hover:text-gold">
                       {link.label}
                     </Link>
                   )
@@ -187,18 +187,18 @@ function Header() {
               </div>
             </div>
             <div>
-              <Link to="/about" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-sm font-medium text-navy hover:text-gold ${isActive('/about') || isActive('/team') || isActive('/dr-daniher') ? 'text-gold' : ''}`}>
+              <Link to="/about" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-[16px] font-medium text-navy hover:text-gold ${isActive('/about') || isActive('/team') || isActive('/dr-daniher') ? 'text-gold' : ''}`}>
                 About Us
               </Link>
               <div className="pl-4 space-y-1 border-l border-gray-200 ml-2">
                 {aboutLinks.map((link) => (
-                  <Link key={link.path} to={link.path} onClick={(e) => handleNavClick(e, link.path)} className="block py-1.5 text-xs text-navy/60 hover:text-gold">
+                  <Link key={link.path} to={link.path} onClick={(e) => handleNavClick(e, link.path)} className="block py-2 text-[14px] text-navy/60 hover:text-gold">
                     {link.label}
                   </Link>
                 ))}
               </div>
             </div>
-            <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-sm font-medium text-navy hover:text-gold ${isActive('/contact') ? 'text-gold' : ''}`}>
+            <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className={`block py-2.5 text-[16px] font-medium text-navy hover:text-gold ${isActive('/contact') ? 'text-gold' : ''}`}>
               Contact
             </Link>
           </nav>

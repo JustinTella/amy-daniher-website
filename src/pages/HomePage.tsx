@@ -76,20 +76,6 @@ function HomePage() {
                 whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              >
-                <h2 className="mb-6 text-2xl font-bold leading-snug tracking-tight text-navy md:text-3xl">What is Concierge Medicine?</h2>
-                <p className="mb-4 text-[18px] leading-[1.95] text-navy/92">Concierge medicine represents a return to the traditional doctor-patient relationship, where your physician has the time to truly know you and your health needs. Through an annual membership, you gain direct access to Dr. Daniher, same-day or next-day appointments, and comprehensive care that goes beyond the constraints of traditional insurance-based medicine.</p>
-                <p className="mb-8 text-[18px] leading-[1.95] text-navy/92">This model allows for longer appointments, proactive health planning, and a genuine partnership in maintaining your wellbeing.</p>
-                <Link to="/services" className="inline-flex items-center text-sm font-semibold uppercase tracking-wider text-gold transition-colors hover:text-navy">
-                  View Our Services <ArrowRight className="ml-1.5 h-4 w-4" />
-                </Link>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
-                whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                 className="grid grid-cols-2 gap-x-4 gap-y-6 md:gap-x-5 md:gap-y-7"
               >
                 {[
@@ -99,10 +85,24 @@ function HomePage() {
                   { title: 'Coordination', desc: 'Seamless specialist referrals and hospital care management.', accent: 'border-t-gold' }
                 ].map((card, i) => (
                   <div key={i} className={`flex min-h-[8.7rem] flex-col border border-navy/70 border-t-[3px] bg-white p-4 md:min-h-[9.1rem] md:p-4.5 ${i >= 2 ? 'translate-y-4 md:translate-y-5' : ''} ${card.accent}`}>
-                    <h3 className="mb-2.5 text-[1.18rem] font-semibold leading-tight text-navy md:text-[1.28rem]">{card.title}</h3>
-                    <p className="text-[0.95rem] leading-6 text-navy/82">{card.desc}</p>
+                    <h3 className="mb-2.5 text-[1.32rem] font-semibold leading-tight text-navy">{card.title}</h3>
+                    <p className="text-[1.1rem] leading-6 text-navy/85">{card.desc}</p>
                   </div>
                 ))}
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
+                whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <h2 className="mb-6 text-[1.75rem] font-bold leading-snug tracking-tight text-navy md:text-[2rem]">What is Concierge Medicine?</h2>
+                <p className="mb-4 text-[1.45rem] leading-[1.85] text-navy/90">Concierge medicine represents a return to the traditional doctor-patient relationship, where your physician has the time to truly know you and your health needs. Through an annual membership, you gain direct access to Dr. Daniher, same-day or next-day appointments, and comprehensive care that goes beyond the constraints of traditional insurance-based medicine.</p>
+                <p className="mb-8 text-[1.45rem] leading-[1.85] text-navy/90">This model allows for longer appointments, proactive health planning, and a genuine partnership in maintaining your wellbeing.</p>
+                <Link to="/services" className="inline-flex items-center text-sm font-semibold uppercase tracking-wider text-gold transition-colors hover:text-navy">
+                  View Our Services <ArrowRight className="ml-1.5 h-4 w-4" />
+                </Link>
               </motion.div>
             </div>
           </div>
@@ -119,7 +119,7 @@ function HomePage() {
               className="mb-14 text-center"
             >
               <p className="mb-3 text-sm font-medium uppercase tracking-[0.18em] text-gold">Our Practice</p>
-              <h3 className="text-2xl font-bold tracking-tight text-navy md:text-3xl">Meet Our Team</h3>
+              <h3 className="text-[1.75rem] font-bold tracking-tight text-navy md:text-[2rem]">Meet Our Team</h3>
               <div className="mx-auto mt-4 h-px w-24 bg-gradient-to-r from-transparent via-gold to-transparent" />
             </motion.div>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -136,14 +136,14 @@ function HomePage() {
                     <img src={member.image} alt={`${member.name}, ${member.role}`} className="h-72 w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]" />
                   </div>
                   <div className="border-t border-steely-blue/45 pt-4 text-center">
-                    <p className="text-lg font-semibold text-navy">{member.name}</p>
-                    <p className="mt-1 text-lg tracking-[0.08em] text-navy/72">{member.role}</p>
+                    <p className="text-[1.2rem] font-semibold text-navy">{member.name}</p>
+                    <p className="mt-1 text-[1rem] tracking-[0.08em] text-navy/72">{member.role}</p>
                   </div>
                 </motion.div>
               ))}
             </div>
             <div className="mt-12 text-center">
-              <Link to="/team" className="inline-flex items-center justify-center border border-navy px-14 py-5 text-xl font-semibold uppercase tracking-[0.16em] text-navy transition-colors duration-200 hover:bg-navy hover:text-white active:scale-[0.97]">
+              <Link to="/team" className="inline-flex items-center justify-center border border-navy px-10 py-3.5 text-sm font-semibold uppercase tracking-[0.16em] text-navy transition-colors duration-200 hover:bg-navy hover:text-white active:scale-[0.97]">
                 Meet the Office
               </Link>
             </div>
@@ -160,7 +160,7 @@ function HomePage() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="mb-14 text-center"
             >
-              <h2 className="text-2xl font-bold tracking-tight text-navy md:text-3xl">Get in Touch</h2>
+              <h2 className="text-[1.75rem] font-bold tracking-tight text-navy md:text-[2rem]">Get in Touch</h2>
               <p className="mt-2 text-sm text-foreground/60">We look forward to partnering in your health.</p>
             </motion.div>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -190,7 +190,7 @@ function HomePage() {
                 transition={{ duration: 0.6, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
                 className="border border-steely-blue/45 bg-white p-6 shadow-[0_16px_34px_rgba(95,118,128,0.10)]"
               >
-                <h3 className="mb-5 border-b border-gray-200 pb-3 text-lg font-semibold text-navy">Send a Message</h3>
+                <h3 className="mb-5 border-b border-gray-200 pb-3 text-[1.45rem] font-semibold text-navy">Send a Message</h3>
                 <ContactForm />
               </motion.div>
 

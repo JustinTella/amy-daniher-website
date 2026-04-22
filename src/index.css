@@ -17,22 +17,22 @@ html {
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 196 19% 38%;
+    --foreground: 196 22% 24%;
 
     --card: 0 0% 100%;
-    --card-foreground: 196 19% 38%;
+    --card-foreground: 196 22% 24%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 196 19% 38%;
+    --popover-foreground: 196 22% 24%;
 
-    --primary: 196 19% 38%;
+    --primary: 196 20% 28%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 176 35% 47%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 176 15% 93%;
-    --muted-foreground: 196 15% 50%;
+    --muted-foreground: 196 15% 38%;
 
     --accent: 176 33% 58%;
     --accent-foreground: 0 0% 100%;
@@ -46,7 +46,7 @@ html {
 
     --radius: 0.5rem;
 
-    --navy: 196 19% 38%;
+    --navy: 196 20% 28%;
     --gold: 176 35% 47%;
     --steely-blue: 176 33% 58%;
     --light-gray: 176 15% 96%;
@@ -71,29 +71,28 @@ html {
     @apply bg-background text-foreground;
   }
 
-  /* Increase body copy readability for older audiences. */
+  /* Body copy readability — accessible for older audiences */
   main p:not(.hero-text),
   main li,
   main label,
   main input,
   main textarea,
   main select {
-    font-size: 1.125rem !important;
-    line-height: 1.85 !important;
+    font-size: 1.3rem;
+    line-height: 1.85;
+  }
+
+  main .text-xs,
+  main .text-sm {
+    font-size: 1.075rem;
+    line-height: 1.7;
   }
 
   footer p,
   footer li,
   footer a {
-    font-size: 1.0625rem !important;
-    line-height: 1.7 !important;
-  }
-
-  /* Slightly boost the smallest text styles without touching headers. */
-  main .text-xs,
-  main .text-sm {
-    font-size: 1.0625rem !important;
-    line-height: 1.7 !important;
+    font-size: 1.05rem;
+    line-height: 1.7;
   }
 
   button,
