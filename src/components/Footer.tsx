@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, FileText, Star, HeartPulse, Stethoscope, Users, Mail } from 'lucide-react';
-import logoImage from '@/assets/FooterLogo.png';
+import logoImage from '@/assets/fotteramy.png';
 
 function Footer() {
   const navigationItems = [
