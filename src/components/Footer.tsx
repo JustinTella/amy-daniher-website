@@ -79,7 +79,7 @@ function Footer() {
               <img
                 src={logoImage}
                 alt="Amy Daniher, M.D."
-                className="h-12 w-auto object-contain md:h-14"
+                className="h-28 w-auto object-contain md:h-36"
               />
             </div>
           </div>
