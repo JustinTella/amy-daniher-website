@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, FileText, Star, HeartPulse, Stethoscope, Users, Mail } from 'lucide-react';
-import logoImage from '@/assets/fotteramy.png';
+import logoImage from '@/assets/fixedfooter.png';
 
 function Footer() {
   const navigationItems = [
@@ -60,7 +60,7 @@ function Footer() {
             </nav>
           </div>
 
-          <div>
+          <div className="flex flex-col">
             <p className="mb-3 border-b border-gold/50 pb-2 text-xs font-semibold uppercase tracking-[0.2em] text-navy">
               Reviews
             </p>
@@ -75,17 +75,15 @@ function Footer() {
                 Google Reviews
               </a>
             </div>
-            <div className="mt-8 flex justify-center">
-              <img
-                src={logoImage}
-                alt="Amy Daniher, M.D."
-                className="h-28 w-auto object-contain md:h-36"
-              />
-            </div>
+            <img
+              src={logoImage}
+              alt="Amy Daniher, M.D."
+              className="mt-auto pt-4 w-72 object-contain object-left md:w-[32rem]"
+            />
           </div>
         </div>
 
-        <div className="mt-7 flex flex-col gap-2.5 border-t border-navy/12 pt-4 md:flex-row md:items-center md:justify-between">
+<div className="mt-7 flex flex-col gap-2.5 border-t border-navy/12 pt-4 md:flex-row md:items-center md:justify-between">
           <p className="text-[12px] tracking-[0.08em] text-navy/56">
             Copyright {new Date().getFullYear()} Amy Daniher, M.D. All rights reserved.
           </p>
