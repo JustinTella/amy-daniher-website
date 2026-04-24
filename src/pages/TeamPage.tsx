@@ -17,7 +17,6 @@ function TeamPage() {
           </div>
         </section>
 
-        {/* DR. DANIHER */}
         <section className="pb-16">
           <div className="mb-12 border-y border-navy/10 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,29 +53,32 @@ function TeamPage() {
             <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-16">
               <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}>
                 <div className="mb-8">
-                  <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide">Experience</h4>
+                  <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide">Background</h4>
                   <ul className="space-y-3 text-[26px] text-foreground/90 leading-[3.2rem]">
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> In practice in San Mateo for over 25 years</li>
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Chair of Department of Medicine at Peninsula Hospital (2015-2019)</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Born and raised in Kansas City</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Began private practice in San Mateo in 2001</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Initially practiced with Mills-Peninsula Medical Group before becoming an independent physician</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Served as medical director for several senior living communities on the Peninsula</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Listed as one of the Bay Area Top Doctors of 2024 by San Francisco Magazine</li>
                   </ul>
                 </div>
                 <div className="mb-8">
                   <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide">Education</h4>
                   <ul className="space-y-3 text-[26px] text-foreground/90 leading-[3.2rem]">
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Completed undergrad at Harvard graduating summa cum laude</li>
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Graduated from Stanford School of Medicine</li>
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Completed internal medicine residency at Stanford</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Graduated from the University of North Carolina at Chapel Hill</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Graduated from the University of Kansas School of Medicine</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Completed internship and residency in Internal Medicine</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Honored as one of the best senior residents</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide">Professional Associations</h4>
                   <ul className="space-y-3 text-[26px] text-foreground/90 leading-[3.2rem]">
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> American College of Physicians</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> American Medical Association</li>
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> San Mateo County Medical Association</li>
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> California Medical Association</li>
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> American Academy of Medical Acupuncture</li>
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Board Certified by American Board of Internal Medicine in 1997, recertified in 2017</li>
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Elected as a Fellow of the American College of Physicians</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Private Practice Doctors of the Peninsula</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Board Certified by the American Board of Internal Medicine in 1998, recertified in 2008 and 2018</li>
                   </ul>
                 </div>
               </motion.div>
@@ -85,22 +87,22 @@ function TeamPage() {
                 <div className="bg-white p-6 shadow-sm border border-gray-300 border-t-4 border-t-gold">
                   <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide border-b border-gray-200 pb-2">Certifications</h4>
                   <p className="mt-3 text-[26px] text-foreground/90 leading-[3.2rem]">
-                    Board Certified by the American Board of Internal Medicine in 1997, recertified in 2017.
+                    Board certified in Internal Medicine.
                   </p>
                   <p className="mt-3 text-[26px] text-foreground/90 leading-[3.2rem]">
-                    Elected as a Fellow of the American College of Physicians.
+                    Board Certified by the American Board of Internal Medicine in 1998, recertified in 2008 and 2018.
                   </p>
                 </div>
                 <div className="bg-white p-6 shadow-sm border border-gray-300 border-t-4 border-t-steely-blue">
-                  <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide border-b border-gray-200 pb-2">Family Life</h4>
+                  <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide border-b border-gray-200 pb-2">Clinical Interests</h4>
                   <p className="mt-3 text-[26px] text-foreground/90 leading-[3.2rem]">
-                    Dr. Daniher is married and has two sons and will be glad to talk about them anytime, anywhere. She loves to spend her free time with skiing (and apres-skiing!), hiking, knitting, and reading. She enjoys traveling to exotic places. At home, she looks forward to sharing a good meal of pasta carbonara with friends and family.
+                    Dr. Daniher enjoys working with patients of all ages, but especially her older patients. She has a special interest in celiac disease and gluten intolerance.
                   </p>
                 </div>
                 <div className="bg-white p-6 shadow-sm border border-gray-300 border-t-4 border-t-gold">
-                  <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide border-b border-gray-200 pb-2">Why I Practice</h4>
+                  <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide border-b border-gray-200 pb-2">Personal Life</h4>
                   <p className="mt-3 text-[26px] text-foreground/90 leading-[3.2rem]">
-                    "I've wanted to be a doctor since I was a small child and I still love my job. I feel privileged to be able to spend more time with my patients so that I can care about them, not just care for them. I try to combine this time-honored doctor-patient relationships with modern medical advances."
+                    Dr. Daniher is married and resides on the Peninsula. She has three children. When not caring for patients, she enjoys being outdoors, photography, gardening, North Carolina basketball, and Notre Dame football.
                   </p>
                 </div>
               </motion.div>
@@ -108,7 +110,6 @@ function TeamPage() {
           </div>
         </section>
 
-        {/* SHAWNA GUZMAN */}
         <section className="border-t border-navy/15 py-14">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-[200px_1fr] lg:gap-14 items-start">
@@ -140,7 +141,6 @@ function TeamPage() {
           </div>
         </section>
 
-        {/* MICHELLE MARTINEZ */}
         <section className="border-t border-navy/15 py-14 pb-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-[200px_1fr] lg:gap-14 items-start">

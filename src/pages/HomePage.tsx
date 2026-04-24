@@ -9,7 +9,6 @@ import officeImage from '@/assets/3882ad1c-8bdd-42fb-8c09-61a8db1db83b.png';
 import drPortrait from '@/assets/Daniher.webp';
 import shawnaPortrait from '@/assets/image-asset (4).webp';
 import kimPortrait from '@/assets/Kim (1).webp';
-import mapImage from '@/assets/dnaiherrrrrrrr.webp';
 
 function HomePage() {
   const teamMembers = [
@@ -173,13 +172,6 @@ function HomePage() {
               >
                 <div className="h-[400px] overflow-hidden border border-navy/70">
                   <MapEmbed />
-                </div>
-                <div className="overflow-hidden border border-navy/70 bg-white">
-                  <img
-                    src={mapImage}
-                    alt="Amy Daniher"
-                    className="h-72 w-full object-cover"
-                  />
                 </div>
               </motion.div>
 

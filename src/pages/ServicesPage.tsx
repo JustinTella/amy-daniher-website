@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ServiceCard from '@/components/ServiceCard';
 import PageSectionHeader from '@/components/PageSectionHeader';
-import primaryImage from '@/assets/daniher22.webp';
+import primaryImage from '@/assets/dnaiherrrrrrrr.webp';
 import preventativeImage from '@/assets/daniher42.webp';
 
 function ServiceSectionHeader({ title }: { title: string }) {
@@ -87,26 +87,28 @@ function ServicesPage() {
         <section id="primary-care" className="scroll-mt-24">
           <ServiceSectionHeader title="Concierge Care" />
           <div className="max-w-7xl mx-auto mb-24 px-4 sm:px-6 lg:px-8 md:mb-32">
-            <div className="grid grid-cols-1 items-start gap-12 md:gap-16 lg:grid-cols-2 lg:gap-20">
+            <div className="space-y-10">
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.18 }}
                 transition={{ duration: 0.72, ease: [0.22, 1, 0.36, 1] }}
               >
-                <div className="mb-10 border border-gray-300 bg-white p-8 shadow-sm">
-                  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-gold">Core Offering</p>
-                  <h3 className="mb-5 text-3xl font-semibold tracking-tight text-navy">Comprehensive Care</h3>
-                  <p className="text-[26px] leading-[3.2rem] text-foreground/90">
-                    Our Concierge Care offering begins with an annual executive physical that includes a thorough review of your personal and family history, physical exam, screening test data, and follow-up communications that help guide health care decisions. From there, the practice is built around direct communication, longer visits, preventive planning, and close coordination that support more personalized and responsive care.
-                  </p>
-                </div>
-                <div className="overflow-hidden border border-navy/70 bg-white shadow-sm">
-                  <img
-                    src={primaryImage}
-                    alt="Amy Daniher"
-                    className="h-72 w-full object-cover md:h-80"
-                  />
+                <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+                  <div className="border border-gray-300 bg-white p-8 shadow-sm">
+                    <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-gold">Core Offering</p>
+                    <h3 className="mb-5 text-3xl font-semibold tracking-tight text-navy">Comprehensive Care</h3>
+                    <p className="text-[26px] leading-[3.2rem] text-foreground/90">
+                      Our Concierge Care offering begins with an annual executive physical that includes a thorough review of your personal and family history, physical exam, screening test data, and follow-up communications that help guide health care decisions. From there, the practice is built around direct communication, longer visits, preventive planning, and close coordination that support more personalized and responsive care.
+                    </p>
+                  </div>
+                  <div className="overflow-hidden border border-navy/70 bg-white shadow-sm">
+                    <img
+                      src={primaryImage}
+                      alt="Amy Daniher"
+                      className="h-full min-h-[340px] w-full object-cover"
+                    />
+                  </div>
                 </div>
               </motion.div>
               <motion.div
@@ -115,7 +117,9 @@ function ServicesPage() {
                 viewport={{ once: true, amount: 0.18 }}
                 transition={{ duration: 0.72, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
               >
-                <ServiceCard title="What We Offer" items={primaryCareServices} />
+                <div className="bg-white">
+                  <ServiceCard title="What We Offer" items={primaryCareServices} />
+                </div>
               </motion.div>
             </div>
           </div>
