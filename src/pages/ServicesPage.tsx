@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ServiceCard from '@/components/ServiceCard';
 import PageSectionHeader from '@/components/PageSectionHeader';
-import primaryImage from '@/assets/dnaiherrrrrrrr.webp';
+import primaryImage from '@/assets/core-offering.webp';
 import preventativeImage from '@/assets/daniher42.webp';
 
 function ServiceSectionHeader({ title }: { title: string }) {
@@ -106,7 +106,7 @@ function ServicesPage() {
                     <img
                       src={primaryImage}
                       alt="Amy Daniher"
-                      className="h-full min-h-[340px] w-full object-cover"
+                      className="h-full min-h-[340px] w-full object-cover object-center"
                     />
                   </div>
                 </div>
