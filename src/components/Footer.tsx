@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, FileText, Star, HeartPulse, Stethoscope, Users, Mail } from 'lucide-react';
-import logoImage from '@/assets/fixedfooter.png';
+import logoImage from '@/assets/amy-logo-brand.png';
 
 function Footer() {
   const navigationItems = [
@@ -78,7 +78,7 @@ function Footer() {
             <img
               src={logoImage}
               alt="Amy Daniher, M.D."
-              className="mt-auto pt-4 w-72 object-contain object-left md:w-[32rem]"
+              className="mt-auto pt-4 w-80 object-contain object-left md:w-[34rem]"
             />
           </div>
         </div>

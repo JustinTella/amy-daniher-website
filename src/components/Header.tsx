@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import logoImage from '@/assets/gretalogo.png';
+import logoImage from '@/assets/amy-logo-brand.png';
 
 function Header() {
   const location = useLocation();
@@ -64,7 +64,7 @@ function Header() {
             <img
               src={logoImage}
               alt="Amy Daniher, M.D. - Partnering with You in Health and Wellness"
-              className="h-10 md:h-[3.45rem] w-auto object-contain"
+              className="h-9 md:h-[3.7rem] w-auto object-contain"
             />
           </Link>
 

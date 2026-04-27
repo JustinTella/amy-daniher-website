@@ -17,40 +17,40 @@ html {
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 196 22% 24%;
+    --foreground: 207 59% 30%;
 
     --card: 0 0% 100%;
-    --card-foreground: 196 22% 24%;
+    --card-foreground: 207 59% 30%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 196 22% 24%;
+    --popover-foreground: 207 59% 30%;
 
-    --primary: 196 20% 28%;
+    --primary: 207 59% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 176 35% 47%;
+    --secondary: 203 90% 60%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 176 15% 93%;
-    --muted-foreground: 196 15% 38%;
+    --muted: 201 50% 97%;
+    --muted-foreground: 207 28% 42%;
 
-    --accent: 176 33% 58%;
+    --accent: 203 90% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 176 18% 85%;
-    --input: 176 18% 85%;
-    --ring: 176 35% 47%;
+    --border: 203 67% 84%;
+    --input: 203 67% 84%;
+    --ring: 203 90% 60%;
 
     --radius: 0.5rem;
 
-    --navy: 196 20% 28%;
-    --gold: 176 35% 47%;
-    --steely-blue: 176 33% 58%;
-    --light-gray: 176 15% 96%;
-    --dark-blue-gray: 196 19% 28%;
+    --navy: 207 59% 30%;
+    --gold: 203 90% 60%;
+    --steely-blue: 203 90% 60%;
+    --light-gray: 201 50% 97%;
+    --dark-blue-gray: 207 59% 30%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

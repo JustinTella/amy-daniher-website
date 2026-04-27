@@ -59,7 +59,7 @@ function TeamPage() {
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Began private practice in San Mateo in 2001</li>
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Initially practiced with Mills-Peninsula Medical Group before becoming an independent physician</li>
                     <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Served as medical director for several senior living communities on the Peninsula</li>
-                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Listed as one of the Bay Area Top Doctors of 2024 by San Francisco Magazine</li>
+                    <li className="flex items-start gap-2"><span className="text-gold mt-0.5">•</span> Selected one of SF's Top Doctors in 2019 and 2024</li>
                   </ul>
                 </div>
                 <div className="mb-8">
@@ -94,9 +94,12 @@ function TeamPage() {
                   </p>
                 </div>
                 <div className="bg-white p-6 shadow-sm border border-gray-300 border-t-4 border-t-steely-blue">
-                  <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide border-b border-gray-200 pb-2">Clinical Interests</h4>
+                  <h4 className="text-[1.55rem] font-bold text-navy mb-3 uppercase tracking-wide border-b border-gray-200 pb-2">Why I Practice Medicine</h4>
                   <p className="mt-3 text-[26px] text-foreground/90 leading-[3.2rem]">
-                    Dr. Daniher enjoys working with patients of all ages, but especially her older patients. She has a special interest in celiac disease and gluten intolerance.
+                    I practice medicine because it allows me to connect with people in meaningful ways during some of their most important moments. From the start, I was drawn to the blend of science, problem-solving, and human interaction that defines clinical care. What continues to sustain me is the daily privilege of spending time with my patients—listening to their stories, understanding their concerns, and working together to improve their health and well-being. Those relationships and the tangible ways I can make a difference in someone&apos;s life bring me real fulfillment.
+                  </p>
+                  <p className="mt-3 text-[26px] text-foreground/90 leading-[3.2rem]">
+                    Medicine challenges me intellectually every day, keeping me engaged and constantly learning. I enjoy the variety of cases, the opportunity to apply knowledge in real time, and the satisfaction of seeing patients feel better or gain clarity about their health. For me, practicing medicine is about building trust and partnership with the individuals I care for, and that human element is what makes the work rewarding and worth doing.
                   </p>
                 </div>
                 <div className="bg-white p-6 shadow-sm border border-gray-300 border-t-4 border-t-gold">
