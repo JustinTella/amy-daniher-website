@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import MapEmbed from '@/components/MapEmbed';
 import PageSectionHeader from '@/components/PageSectionHeader';
-import contactImage from '@/assets/ddd.webp';
+import contactOfficeImage from '@/assets/Gemini_Generated_Image_l6jcc5l6jcc5l6jc.png';
 
 function ContactPage() {
   return (
@@ -22,9 +22,9 @@ function ContactPage() {
               </div>
               <div className="overflow-hidden shadow-sm border border-navy/70 bg-white">
                 <img
-                  src={contactImage}
-                  alt="Amy Daniher"
-                  className="h-72 w-full object-cover"
+                  src={contactOfficeImage}
+                  alt="Exterior of the office building"
+                  className="h-64 w-full object-cover object-center"
                 />
               </div>
             </motion.div>

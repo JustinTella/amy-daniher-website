@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import MapEmbed from '@/components/MapEmbed';
 import coverImage from '@/assets/home-cover.jpg';
+import contactOfficeImage from '@/assets/Gemini_Generated_Image_l6jcc5l6jcc5l6jc.png';
 import drPortrait from '@/assets/Daniher.webp';
 import shawnaPortrait from '@/assets/image-asset (4).webp';
 import kimPortrait from '@/assets/Kim (1).webp';
@@ -187,6 +188,13 @@ function HomePage() {
               >
                 <div className="h-[400px] overflow-hidden border border-navy/70">
                   <MapEmbed />
+                </div>
+                <div className="overflow-hidden border border-navy/70 bg-white">
+                  <img
+                    src={contactOfficeImage}
+                    alt="Exterior of the office building"
+                    className="h-64 w-full object-cover object-center"
+                  />
                 </div>
               </motion.div>
 
