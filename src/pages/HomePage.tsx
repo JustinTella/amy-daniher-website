@@ -12,9 +12,9 @@ import kimPortrait from '@/assets/Kim (1).webp';
 
 function HomePage() {
   const teamMembers = [
-    { name: 'Amy Daniher, M.D.', image: drPortrait, role: 'Physician' },
-    { name: 'Shawna G.', image: shawnaPortrait, role: 'Office Manager' },
-    { name: 'Kim J.', image: kimPortrait, role: 'Medical Assistant' }
+    { name: 'Amy Daniher, M.D.', image: drPortrait, role: 'Physician', link: '/team#amy' },
+    { name: 'Shawna G.', image: shawnaPortrait, role: 'Office Manager', link: '/team#shawna' },
+    { name: 'Kim J.', image: kimPortrait, role: 'Medical Assistant', link: '/team#kim' }
   ];
 
   const conciergeCards = [
@@ -108,7 +108,7 @@ function HomePage() {
                   transition={{ duration: 0.6, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
                   className="group border border-steely-blue/35 bg-white p-4 shadow-[0_16px_34px_rgba(95,118,128,0.12)]"
                 >
-                  <Link to="/about" className="block">
+                  <Link to={member.link} className="block">
                     <div className="mb-5 overflow-hidden border border-steely-blue/28">
                       <img src={member.image} alt={`${member.name}, ${member.role}`} className="h-72 w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]" />
                     </div>
