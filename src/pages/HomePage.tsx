@@ -30,7 +30,7 @@ function HomePage() {
       <Header />
       <main>
         {/* HERO */}
-        <section className="relative flex min-h-[88vh] items-end overflow-hidden pb-12 pt-28 md:pb-20 md:pt-32">
+        <section className="relative flex min-h-[78vh] items-end overflow-hidden pb-10 pt-20 sm:min-h-[84vh] sm:pt-24 md:min-h-[88vh] md:pb-20 md:pt-32">
           <div className="absolute inset-0 z-0">
             <img
               src={coverImage}
@@ -46,26 +46,26 @@ function HomePage() {
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="relative max-w-3xl"
             >
-              <div className="mt-5 px-1 md:px-2">
-                <p className="hero-text mb-2 whitespace-nowrap text-xl font-semibold uppercase tracking-[0.18em] text-white/95 drop-shadow-[0_2px_8px_rgba(15,23,42,0.36)] md:text-2xl">
+              <div className="mt-2 px-0 sm:mt-5 sm:px-1 md:px-2">
+                <p className="hero-text mb-2 max-w-[18rem] text-[0.9rem] font-semibold uppercase leading-[1.35] tracking-[0.14em] text-white/95 drop-shadow-[0_2px_8px_rgba(15,23,42,0.36)] sm:max-w-none sm:text-xl sm:tracking-[0.18em] md:text-2xl">
                   Comprehensive Care. Individual Focus.
                 </p>
-                <h1 className="mb-2 whitespace-nowrap text-[2.2rem] font-semibold leading-[0.95] tracking-[-0.03em] text-white drop-shadow-[0_3px_14px_rgba(15,23,42,0.34)] md:text-[3.4rem] lg:text-[4.6rem]">
+                <h1 className="mb-2 max-w-[16rem] text-[2.4rem] font-semibold leading-[0.95] tracking-[-0.03em] text-white drop-shadow-[0_3px_14px_rgba(15,23,42,0.34)] sm:max-w-none sm:text-[3.1rem] md:text-[3.4rem] lg:text-[4.6rem]">
                   Amy Daniher, M.D.
                 </h1>
-                <p className="hero-text mb-1 text-4xl font-medium italic leading-none tracking-[-0.02em] text-white/95 drop-shadow-[0_3px_12px_rgba(15,23,42,0.32)] md:text-5xl">
+                <p className="hero-text mb-1 text-[2.15rem] font-medium italic leading-[0.96] tracking-[-0.02em] text-white/95 drop-shadow-[0_3px_12px_rgba(15,23,42,0.32)] sm:text-[3rem] md:text-5xl">
                   Concierge Medicine
                 </p>
-                <p className="hero-text mb-3 text-4xl font-medium italic leading-none text-white/95 drop-shadow-[0_3px_12px_rgba(15,23,42,0.32)] md:text-5xl">
+                <p className="hero-text mb-4 text-[2.15rem] font-medium italic leading-[0.96] text-white/95 drop-shadow-[0_3px_12px_rgba(15,23,42,0.32)] sm:text-[3rem] md:text-5xl">
                   San Mateo, CA
                 </p>
-                <div className="space-y-2 text-xl text-white drop-shadow-[0_2px_8px_rgba(15,23,42,0.34)] md:text-2xl">
-                  <p className="hero-text flex items-center gap-2">
-                    <MapPin className="h-6 w-6 text-steely-blue" />
+                <div className="space-y-2 text-[1.05rem] text-white drop-shadow-[0_2px_8px_rgba(15,23,42,0.34)] sm:text-xl md:text-2xl">
+                  <p className="hero-text flex items-start gap-2 sm:items-center">
+                    <MapPin className="mt-1 h-5 w-5 shrink-0 text-steely-blue sm:mt-0 sm:h-6 sm:w-6" />
                     34 N. San Mateo Drive, Suite #1
                   </p>
                   <p className="hero-text flex items-center gap-2">
-                    <Phone className="h-6 w-6 text-steely-blue" />
+                    <Phone className="h-5 w-5 shrink-0 text-steely-blue sm:h-6 sm:w-6" />
                     650-393-5851
                   </p>
                 </div>
@@ -93,9 +93,9 @@ function HomePage() {
                 href="https://www.castleconnolly.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 border border-[#d8b24c]/80 bg-[#fff7dc] px-4 py-3 text-[0.92rem] font-semibold uppercase tracking-[0.16em] text-[#b4871f] shadow-[0_12px_30px_rgba(20,91,150,0.10)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#fff2c6]"
+                className="inline-flex max-w-full items-center gap-2 border border-[#d8b24c]/80 bg-[#fff7dc] px-3 py-3 text-[0.82rem] font-semibold uppercase leading-[1.35] tracking-[0.11em] text-[#b4871f] shadow-[0_12px_30px_rgba(20,91,150,0.10)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#fff2c6] sm:px-4 sm:text-[0.92rem] sm:tracking-[0.16em]"
               >
-                <Award className="h-4 w-4 text-[#c89b2f]" />
+                <Award className="h-4 w-4 shrink-0 text-[#c89b2f]" />
                 Selected one of SF's Top Doctors in 2019 and 2024
               </a>
             </div>
@@ -111,7 +111,7 @@ function HomePage() {
                 >
                   <Link to={member.link} className="block">
                     <div className="mb-5 overflow-hidden border border-steely-blue/28">
-                      <img src={member.image} alt={`${member.name}, ${member.role}`} className="h-72 w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]" />
+                      <img src={member.image} alt={`${member.name}, ${member.role}`} className="h-64 w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02] sm:h-72" />
                     </div>
                   </Link>
                   <div className="border-t border-steely-blue/45 pt-4 text-center">
@@ -152,10 +152,10 @@ function HomePage() {
                 whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                className="grid grid-cols-2 gap-x-4 gap-y-6 md:gap-x-5 md:gap-y-7"
+                className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 sm:gap-y-6 md:gap-x-5 md:gap-y-7"
               >
                 {conciergeCards.map((card, i) => (
-                  <div key={i} className={`flex min-h-[8.7rem] flex-col border border-navy/55 border-t-[3px] bg-white p-4 shadow-[0_12px_24px_rgba(95,118,128,0.08)] md:min-h-[9.1rem] md:p-4.5 ${i >= 2 ? 'translate-y-4 md:translate-y-5' : ''} ${card.accent}`}>
+                  <div key={i} className={`flex min-h-[8.2rem] flex-col border border-navy/55 border-t-[3px] bg-white p-4 shadow-[0_12px_24px_rgba(95,118,128,0.08)] sm:min-h-[8.7rem] md:min-h-[9.1rem] md:p-4.5 ${i >= 2 ? 'sm:translate-y-4 md:translate-y-5' : ''} ${card.accent}`}>
                     <h3 className="mb-2.5 text-[1.32rem] font-semibold leading-tight text-navy">{card.title}</h3>
                     <p className="text-[1.1rem] leading-6 text-navy/85">{card.desc}</p>
                   </div>
@@ -186,14 +186,14 @@ function HomePage() {
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 className="space-y-6"
               >
-                <div className="h-[400px] overflow-hidden border border-navy/70">
+                <div className="h-[320px] overflow-hidden border border-navy/70 sm:h-[400px]">
                   <MapEmbed />
                 </div>
                 <div className="overflow-hidden border border-navy/70 bg-white">
                   <img
                     src={contactOfficeImage}
                     alt="Exterior of the office building"
-                    className="h-64 w-full object-cover object-center"
+                    className="h-56 w-full object-cover object-center sm:h-64"
                   />
                 </div>
               </motion.div>

@@ -59,12 +59,12 @@ function Header() {
   return (
     <header className={`sticky top-0 z-50 bg-white transition-all duration-300 ${scrolled ? 'shadow-[0_1px_3px_rgba(0,0,0,0.08)]' : ''}`}>
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <Link to="/" className="shrink-0">
             <img
               src={logoImage}
               alt="Amy Daniher, M.D. - Partnering with You in Health and Wellness"
-              className="h-9 md:h-[3.7rem] w-auto object-contain"
+              className="h-8 sm:h-10 md:h-[5.2rem] w-auto object-contain"
             />
           </Link>
 
@@ -152,7 +152,7 @@ function Header() {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden text-navy p-2 hover:text-gold transition-colors"
+            className="lg:hidden shrink-0 text-navy p-2 hover:text-gold transition-colors"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
