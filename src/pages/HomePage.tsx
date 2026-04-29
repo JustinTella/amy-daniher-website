@@ -36,7 +36,7 @@ function HomePage() {
             <img
               src={mobileCoverImage}
               alt="Dr. Amy Daniher with a patient"
-              className="h-full w-full object-cover object-top contrast-[1.06] saturate-[1.03] brightness-[1.03] sm:hidden"
+              className="h-full w-full object-cover object-[8%_top] contrast-[1.06] saturate-[1.03] brightness-[1.03] sm:hidden"
             />
             <img
               src={coverImage}
