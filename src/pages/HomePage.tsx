@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import MapEmbed from '@/components/MapEmbed';
 import coverImage from '@/assets/home-cover.jpg';
+import mobileCoverImage from '@/assets/home-cover-mobile.jpg';
 import contactOfficeImage from '@/assets/Gemini_Generated_Image_l6jcc5l6jcc5l6jc.png';
 import drPortrait from '@/assets/Daniher.webp';
 import shawnaPortrait from '@/assets/image-asset (4).webp';
@@ -33,9 +34,14 @@ function HomePage() {
         <section className="relative flex min-h-[78vh] items-end overflow-hidden pb-10 pt-20 sm:min-h-[84vh] sm:pt-24 md:min-h-[88vh] md:pb-20 md:pt-32">
           <div className="absolute inset-0 z-0">
             <img
+              src={mobileCoverImage}
+              alt="Dr. Amy Daniher with a patient"
+              className="h-full w-full object-cover object-top contrast-[1.06] saturate-[1.03] brightness-[1.03] sm:hidden"
+            />
+            <img
               src={coverImage}
               alt="Dr. Amy Daniher with a patient"
-              className="h-full w-full object-cover object-top contrast-[1.06] saturate-[1.03] brightness-[1.03]"
+              className="hidden h-full w-full object-cover object-top contrast-[1.06] saturate-[1.03] brightness-[1.03] sm:block"
             />
             <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(33,64,88,0.74)_0%,rgba(41,73,95,0.64)_16%,rgba(51,82,102,0.52)_32%,rgba(63,94,111,0.38)_46%,rgba(76,106,121,0.24)_60%,rgba(90,118,131,0.12)_72%,rgba(90,118,131,0)_100%)]" />
           </div>
