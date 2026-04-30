@@ -18,6 +18,19 @@ type GoogleReviewResponse = {
   reviews: GoogleReview[];
 };
 
+function abbreviateReviewerName(name: string) {
+  const trimmed = name.trim();
+  if (!trimmed) return trimmed;
+
+  const parts = trimmed.split(/\s+/);
+  if (parts.length < 2) return trimmed;
+
+  const lastPart = parts[parts.length - 1];
+  if (lastPart.length <= 2 || lastPart.endsWith('.')) return trimmed;
+
+  return `${parts[0]} ${lastPart.charAt(0)}.`;
+}
+
 const PLACE_ID = 'ChIJyS-y6naej4ARkep0Q9QrJxY';
 const LIVE_SITE_FUNCTION = 'https://sujansky.netlify.app/.netlify/functions/google-reviews';
 const FALLBACK_GOOGLE_REVIEWS: GoogleReviewResponse = {
@@ -151,17 +164,17 @@ function GoogleReviewLoop() {
                       {review.profilePhoto ? (
                         <img
                           src={review.profilePhoto}
-                          alt={review.author}
+                          alt={abbreviateReviewerName(review.author)}
                           referrerPolicy="no-referrer"
                           className="h-10 w-10 rounded-full object-cover"
                         />
                       ) : (
                         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-navy/10 text-sm font-semibold text-navy">
-                          {review.author.charAt(0)}
+                          {abbreviateReviewerName(review.author).charAt(0)}
                         </div>
                       )}
                       <div className="min-w-0">
-                        <p className="truncate text-sm font-semibold text-navy">{review.author}</p>
+                        <p className="truncate text-sm font-semibold text-navy">{abbreviateReviewerName(review.author)}</p>
                         <div className="mt-0.5 flex items-center gap-2">
                           <div className="flex">
                             {[...Array(5)].map((_, i) => (

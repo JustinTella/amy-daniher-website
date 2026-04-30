@@ -11,9 +11,9 @@ import shawnaImage from '@/assets/image-asset (4).webp';
 const GOOGLE_URL = "https://www.google.com/maps/place/Amy+S.+Daniher,+M.D./@37.5680082,-122.3311919,17z/data=!4m16!1m7!3m6!1s0x808f9e71249680f7:0x707aae76c5c22f3c!2sAmy+S.+Daniher,+M.D.!8m2!3d37.568004!4d-122.326321!16s%2Fg%2F1wt3nncv!3m7!1s0x808f9e71249680f7:0x707aae76c5c22f3c!8m2!3d37.568004!4d-122.326321!9m1!1b1!16s%2Fg%2F1wt3nncv?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D";
 
 const reviews = [
-  { name: 'Justin Tella', initial: 'J', color: '#4285F4', time: 'just now', text: 'Amazing practice! Dr. Daniher and her staff are extremely attentive, responsive, and considerate.' },
-  { name: 'Hunter King', initial: 'H', color: '#5f4b32', time: '12 years ago', text: 'Excellent bedside manner, very smart, good staff.' },
-  { name: 'Barbara Elashoff', initial: 'B', color: '#e8344a', time: '2 years ago', text: '' },
+  { name: 'Justin T.', initial: 'J', color: '#4285F4', time: 'just now', text: 'Amazing practice! Dr. Daniher and her staff are extremely attentive, responsive, and considerate.' },
+  { name: 'Hunter K.', initial: 'H', color: '#5f4b32', time: '12 years ago', text: 'Excellent bedside manner, very smart, good staff.' },
+  { name: 'Barbara E.', initial: 'B', color: '#e8344a', time: '2 years ago', text: '' },
 ];
 
 function Stars() {
